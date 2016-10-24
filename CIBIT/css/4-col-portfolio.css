@@ -1,0 +1,236 @@
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body{
+  padding: 0px;
+}
+
+ .navbar-custom {
+   background: #0e3e6e;
+   /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+   text-transform: uppercase;
+   font-weight: 700;
+   border: none;
+ }
+
+ .navbar-custom .navbar-brand {
+   color: white;
+ }
+
+ .navbar-brand {
+   font-size: 350%;
+ }
+
+.navbar-brand .logo_bar{
+  width:15%;
+  height: auto;
+}
+
+ .navbar-custom .navbar-brand:hover,
+ .navbar-custom .navbar-brand:focus,
+ .navbar-custom .navbar-brand:active,
+ .navbar-custom .navbar-brand.active {
+   color: white;
+ }
+
+.navbar-custom  .navbar-nav li a{
+  color: white;
+  font-size: 125%;
+}
+
+.navbar-custom  .navbar-nav li a:hover,
+.navbar-custom  .navbar-nav li a:focus,
+.navbar-custom  .navbar-nav li a:active,
+.navbar-custom  .navbar-nav li a.active {
+  color: #dfe5e6;
+}
+
+.navbar-custom .navbar-toggle {
+  color: white;
+  border-color: white;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #0e3e6e;
+  color: white;
+  border-color: #0e3e6e;
+}
+/*
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix {
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+*/
+.logo{
+  width:50%;
+  height: auto;
+  margin: 0px auto 10px;
+}
+
+.center_txt{
+  text-align: center;
+}
+
+header {
+  text-align: center;
+}
+header .container {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+section.toggle_1{
+  text-align: center;
+  background: #36424a;
+  margin: 0px auto;
+  font-family: monospace;
+  padding-top: 50px;
+  padding-bottom: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+footer.toggle_1{
+  text-align: center;
+  background: #36424a;
+  margin: 0px auto;
+  font-family: monospace;
+  padding-top: 50px;
+  padding-bottom: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+section.toggle_0{
+  text-align: center;
+  margin: 0px auto;
+  font-family: monospace;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.about_cont{
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:0px;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.col-centered img{
+  margin: 0 auto;
+}
+
+.block_test{
+  background-color: green;
+}
+
+.block_test2{
+  background-color: pink;
+}
+
+hr.star-light {
+  padding: 0;
+  border: none;
+  border-top: solid 3px;
+  text-align: center;
+  max-width: 300px;
+  margin: -2px auto 30px;
+}
+
+
+
+span.star-headder{
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 300%;
+}
+
+hr.member-light {
+  padding: 0;
+  border: none;
+  border-top: solid 1px;
+  text-align: left;
+  margin: -2px auto 10px;
+}
+
+
+
+span.member-headder{
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 200%;
+}
+
+span.star-headder2{
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 200%;
+}
+
+.alumni_list{
+  text-align: left;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+
+.gutter-0.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"]{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+* {
+   font-size: 16px;
+}
+
+.small_font{
+  font-size: 11px;
+}
+
+.caption_font_size{
+   font-size: 14px;
+}
+/*
+.center {
+    margin: 0 auto;
+    width: 90%;
+}
+*/

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Narsi Reddy</title>
-    <link>http://itsmrn.com/index.xml</link>
-    <description>Recent content on Narsi Reddy</description>
+    <title>Abouts on Narsi Reddy</title>
+    <link>http://itsmrn.com/about/index.xml</link>
+    <description>Recent content in Abouts on Narsi Reddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>sainarsireddy@hotmail.com (narsi reddy, donthi reddy)</managingEditor>
     <webMaster>sainarsireddy@hotmail.com (narsi reddy, donthi reddy)</webMaster>
-    <atom:link href="http://itsmrn.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://itsmrn.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>

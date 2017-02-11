@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>It&#39;s Mr.N</title>
+    <link>http://itsmrn.com/index.xml</link>
+    <description>Recent content on It&#39;s Mr.N</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Feb 2017 15:45:26 -0600</lastBuildDate>
+    <atom:link href="http://itsmrn.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://itsmrn.com/about/</link>
+      <pubDate>Sat, 11 Feb 2017 15:45:26 -0600</pubDate>
+      
+      <guid>http://itsmrn.com/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

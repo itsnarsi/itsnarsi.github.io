@@ -9,10 +9,10 @@
     "name": "casper"
   },
   "urls": {
-    "site": "https://itsnarsi.github.io",
+    "site": "http://itsmrn.com",
     "hubpress": "http://itsmrn.com",
-    "theme": "//itsnarsi.github.io/themes/casper",
-    "images": "https://itsnarsi.github.io/images"
+    "theme": "//itsmrn.com/themes/casper",
+    "images": "http://itsmrn.com/images"
   },
   "initialisationConfigComponent": {
     "name": "initialise-configuration",

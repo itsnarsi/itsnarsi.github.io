@@ -1,0 +1,22 @@
+= Bechmarking HIPCaffe
+
+== 1) Intro
+
+== 2) Hardware
+. Intel i7 6700K w/ 16GB RAM
+. 1TB HDD
+. XFX RX 480 8GB (reference model)
+
+=== software:
+. Ubuntu 16.04
+. rocm 1.6[https://rocm.github.io/]
+. clCaffe[https://github.com/BVLC/caffe/tree/opencl]
+. hipCaffe[https://github.com/ROCmSoftwarePlatform/hipCaffe]
+
+== 3) Benchmarks
+image::https://raw.githubusercontent.com/itsnarsi/itsnarsi.github.io/master/images/july/amd_rx480_bench.jpg[AMD_RX_480]
+
+* Full analysis will be posted soon.
+:published_at: 2017-07-22
+:hp-tags: amd, deep learning, caffe, clcaffe, hipcaffe, hip, miopen, opencl
+:hp-image: https://raw.githubusercontent.com/itsnarsi/itsnarsi.github.io/master/images/july/rocm_logo.png

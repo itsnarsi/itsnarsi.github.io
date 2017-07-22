@@ -19,4 +19,5 @@ image::https://raw.githubusercontent.com/itsnarsi/itsnarsi.github.io/master/imag
 * Full analysis will be posted soon.
 :published_at: 2017-07-22
 :hp-tags: amd, deep learning, caffe, clcaffe, hipcaffe, hip, miopen, opencl
+:hp-image: https://raw.githubusercontent.com/itsnarsi/itsnarsi.github.io/master/images/july/rocm_logo.png
 

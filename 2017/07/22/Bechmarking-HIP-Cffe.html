@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Bechmarking HIPCaffe</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://itsmrn.com/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//itsmrn.com/themes/casper/assets/css/screen.css?v=1500754209058" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://itsmrn.com/2017/07/22/Bechmarking-HIP-Cffe.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="ItsMrN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bechmarking HIPCaffe" />
+    <meta property="og:description" content="1) Intro 2) Hardware Intel i7 6700K w/ 16GB RAM 1TB HDD XFX RX 480 8GB (reference model) software: Ubuntu 16.04 rocm 1.6[https://rocm.github.io/] clCaffe[https://github.com/BVLC/caffe/tree/opencl] hipCaffe[https://github.com/ROCmSoftwarePlatform/hipCaffe] 3) Benchmarks Full analysis will be posted" />
+    <meta property="og:url" content="http://itsmrn.com/2017/07/22/Bechmarking-HIP-Cffe.html" />
+    <meta property="article:published_time" content="2017-07-22T00:00:00.000Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Bechmarking HIPCaffe" />
+    <meta name="twitter:description" content="1) Intro 2) Hardware Intel i7 6700K w/ 16GB RAM 1TB HDD XFX RX 480 8GB (reference model) software: Ubuntu 16.04 rocm 1.6[https://rocm.github.io/] clCaffe[https://github.com/BVLC/caffe/tree/opencl] hipCaffe[https://github.com/ROCmSoftwarePlatform/hipCaffe] 3) Benchmarks Full analysis will be posted" />
+    <meta name="twitter:url" content="http://itsmrn.com/2017/07/22/Bechmarking-HIP-Cffe.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "ItsMrN",
+    "author": {
+        "@type": "Person",
+        "name": "Narsi Reddy",
+        "image": "https://avatars3.githubusercontent.com/u/11802437?v=4",
+        "url": "http://itsmrn.com/author/itsnarsi/",
+        "description": "PhD student at UMKC."
+    },
+    "headline": "Bechmarking HIPCaffe",
+    "url": "http://itsmrn.com/2017/07/22/Bechmarking-HIP-Cffe.html",
+    "datePublished": "2017-07-22T00:00:00.000Z",
+    "description": "1) Intro 2) Hardware Intel i7 6700K w/ 16GB RAM 1TB HDD XFX RX 480 8GB (reference model) software: Ubuntu 16.04 rocm 1.6[https://rocm.github.io/] clCaffe[https://github.com/BVLC/caffe/tree/opencl] hipCaffe[https://github.com/ROCmSoftwarePlatform/hipCaffe] 3) Benchmarks Full analysis will be posted"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="ItsMrN" href="http://itsmrn.com/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+</head>
+<body class="post-template nav-closed">
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Bechmarking HIPCaffe</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2017-07-22">22 July 2017</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="sect1">
+<h2 id="_1_intro">1) Intro</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_hardware">2) Hardware</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Intel i7 6700K w/ 16GB RAM</p>
+</li>
+<li>
+<p>1TB HDD</p>
+</li>
+<li>
+<p>XFX RX 480 8GB (reference model)</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_software">software:</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Ubuntu 16.04</p>
+</li>
+<li>
+<p>rocm 1.6[<a href="https://rocm.github.io/" class="bare">https://rocm.github.io/</a>]</p>
+</li>
+<li>
+<p>clCaffe[<a href="https://github.com/BVLC/caffe/tree/opencl" class="bare">https://github.com/BVLC/caffe/tree/opencl</a>]</p>
+</li>
+<li>
+<p>hipCaffe[<a href="https://github.com/ROCmSoftwarePlatform/hipCaffe" class="bare">https://github.com/ROCmSoftwarePlatform/hipCaffe</a>]</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_benchmarks">3) Benchmarks</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/itsnarsi/itsnarsi.github.io/master/images/july/amd_rx480_bench.jpg" alt="AMD_RX_480">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Full analysis will be posted soon.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="http://itsmrn.com/author/itsnarsi/" style="background-image: url(https://avatars3.githubusercontent.com/u/11802437?v&#x3D;4)"><span class="hidden">Narsi Reddy's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="http://itsmrn.com/author/itsnarsi/">Narsi Reddy</a></h4>
+
+                    <p>PhD student at UMKC.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Kansas City, MO</span>
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Bechmarking%20HIPCaffe&amp;url=http://itsmrn.com/2017/07/22/Bechmarking-HIP-Cffe.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://itsmrn.com/2017/07/22/Bechmarking-HIP-Cffe.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://itsmrn.com/2017/07/22/Bechmarking-HIP-Cffe.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://itsmrn.com">ItsMrN</a> &copy; 2017</section>
+            <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+       
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+    <script type="text/javascript" src="//itsmrn.com/themes/casper/assets/js/jquery.fitvids.js?v=1500754209058"></script>
+    <script type="text/javascript" src="//itsmrn.com/themes/casper/assets/js/index.js?v=1500754209058"></script>
+
+</body>
+</html>

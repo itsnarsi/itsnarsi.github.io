@@ -2,7 +2,8 @@
   "meta": {
     "username": "itsnarsi",
     "repositoryName": "itsnarsi.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": "itsmrn.com"
   },
   "theme": {
     "name": "casper"
@@ -22,5 +23,27 @@
       null,
       null
     ]
+  },
+  "site": {
+    "title": "ItsMrN",
+    "description": "My personal  blog.",
+    "logo": "",
+    "cover": "",
+    "delay": "",
+    "postsPerPage": "",
+    "googleAnalytics": "",
+    "disqus": ""
+  },
+  "socialnetwork": {
+    "email": "sainarsireddy@yahoo.com",
+    "github": "https://github.com/itsnarsi",
+    "twitter": "https://twitter.com/itsnarsi",
+    "facebook": "https://www.facebook.com/sainarsi.reddy",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "",
+    "stackoverflow": ""
   }
 }
